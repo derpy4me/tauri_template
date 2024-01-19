@@ -1,0 +1,22 @@
+# TODO
+
+- [ ] Implement logging
+    - [ ] Logs sent to Graylog
+    - [ ] Logs displayed in Console
+- [ ] Async request list of openapi.json
+    - [ ] Generate requests from schema
+    - [ ] Version checking of schema and update on change
+- [ ] Generic request to use a schema from openapi
+- [ ] Search addresses in database, by query and eng spreadsheets
+- [ ] Get address id and add drop, verify info is correct
+- [ ] Application versioning
+  - [ ] Kubernetes deployment
+  - [ ] Main File
+  - [ ] Add Env to secrets, .env and example.env
+  - [ ] ***Show preview***
+  - [ ] ***Confirmation***
+  - [ ] ***Show file contents***
+  - [ ] ***Highlight changes***
+- [ ] Simple http server for testing webhooks and calls
+  - [ ] Set response status code
+  - [ ] Set response body

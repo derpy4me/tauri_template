@@ -1,0 +1,85 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:5173",
+    "distDir": "../static"
+  },
+  "package": {
+    "productName": "stratafi-help-tool",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.stratafi.help",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "StrataFi Help Tool",
+        "width": 800
+      }
+    ],
+    "cli": {
+      "description": "StrataFi help tool to help troubleshoot Strata resources",
+      "longDescription": "This is a really long description containing much needed details.",
+      "beforeHelp": "This section will have even more details explaining stuff before you look at the help section",
+      "afterHelp": "This section will be after the help in case you're not confused enough",
+      "args": [
+        {
+          "name": "test",
+          "short": "t",
+          "multipleOccurrences": false,
+          "takesValue": false
+        }
+      ],
+      "subcommands": {
+        "gen": {
+          "args": [],
+          "description": "Generate openapi schema from url or file provided"
+        }
+      }
+    }
+  }
+}
